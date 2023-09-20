@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppbarLayout" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:gravity">center</item>
+        <item name="color">?attr/colorPrimary</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="RoundedFrameShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

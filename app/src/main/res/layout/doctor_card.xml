@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardDoctor"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp"
+    app:cardBackgroundColor="?attr/colorPrimaryVariant"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="21dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardRoundedBack"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/rounded_background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="15dp">
+            <include layout="@layout/bookmark_button"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgDoc"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedFrameShape"
+        app:srcCompat="@drawable/ic_baseline_profile_36" />
+
+
+    <TextView
+        android:id="@+id/tvDocName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Dr. X"
+        android:textAlignment="center"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDocSpeciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Surgeon"
+        android:textAlignment="center"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvDocLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="85dp"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:text="Dhaka,Bangladesh"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDoctorContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/et_design"
+        android:text="@string/contacts"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+
+</androidx.cardview.widget.CardView>
